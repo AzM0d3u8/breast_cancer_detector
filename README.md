@@ -1,22 +1,53 @@
 
-# Breast Cancer Detection using Deep Neural Networks
+# 🧠 Breast Cancer Detection using Deep Neural Networks
 
-Detect whether a breast tumor is benign or malignant using a deep learning model.
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.10%2B-orange.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)
 
-## Project Structure
-- scripts/train.py
-- scripts/predict.py
-- models/ (saved model and scaler)
-- notebooks/breast_cancer_detection.ipynb
-- requirements.txt
-- README.md
+---
 
-## How to run
-1. Install dependencies:
-    pip install -r requirements.txt
+## 📖 Overview
 
-2. Train the model:
-    python scripts/train.py
+This project focuses on **early and accurate detection of breast cancer** using a deep learning-based neural network.  
+It classifies tumors as either **Benign** or **Malignant** based on fine-grained features extracted from biopsy data.
 
-3. Predict a new sample:
-    python scripts/predict.py
+The aim is to help automate preliminary diagnosis and assist healthcare professionals.
+
+---
+
+## 📂 Repository Structure
+
+---
+
+## 🧬 Dataset
+
+- **Source**: [UCI Machine Learning Repository - Breast Cancer Wisconsin (Diagnostic)](https://archive.ics.uci.edu/ml/datasets/breast+cancer+wisconsin+(diagnostic))
+- **Features**: 30 numerical input features (e.g., radius, texture, smoothness).
+- **Target Classes**: 
+  - `0`: Malignant
+  - `1`: Benign
+- **Total Samples**: 569 instances.
+
+---
+
+## ⚙️ Features of This Project
+
+- Deep Neural Network with 5 layers and **Dropout Regularization**.
+- **EarlyStopping** and **ReduceLROnPlateau** callbacks to prevent overfitting.
+- **Keras** model saving (`.keras`) and **scaler** serialization (`.pkl`).
+- **Confusion Matrix**, **ROC Curve**, and **Training History** visualization.
+- CSV Upload for batch predictions inside Colab.
+- Manual patient input using **ipywidgets**.
+- Highly modular scripts for training and inference.
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/AzM0d3u8/breast_cancer_detector.git
+cd breast_cancer_detector
