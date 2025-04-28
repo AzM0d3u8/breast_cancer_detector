@@ -24,18 +24,18 @@
 ---
 
 ⚙️ Features of This Project
-Deep Learning Model: Sequential Deep Neural Network built with Keras (TensorFlow backend). Features 5 layers with Dropout regularization to prevent overfitting.
-Training Callbacks: Implements EarlyStopping to halt training when validation performance degrades and ReduceLROnPlateau to adjust the learning rate dynamically.
-Preprocessing: Utilizes StandardScaler from Scikit-learn for feature scaling, saved for consistent application during inference.
-Model Persistence: Saves the trained Keras model (.keras format) and the scaler object (.pkl using joblib).
-Evaluation & Visualization: Generates and displays:
-Confusion Matrix
-ROC Curve and AUC Score
-Training & Validation Accuracy/Loss History Plots
-Prediction Interfaces:
-Batch Prediction: Accepts CSV file uploads for prediction (via Notebook or script).
-Manual Input: Interactive patient data input using ipywidgets within the Jupyter Notebook.
-Modularity: Separate Python scripts (train.py, predict.py) for streamlined training and inference workflows.
+- Deep Learning Model: Sequential Deep Neural Network built with Keras (TensorFlow backend). Features 5 layers with Dropout regularization to prevent overfitting.
+- Training Callbacks: Implements EarlyStopping to halt training when validation performance degrades and ReduceLROnPlateau to adjust the learning rate dynamically.
+- Preprocessing: Utilizes StandardScaler from Scikit-learn for feature scaling, saved for consistent application during inference.
+- Model Persistence: Saves the trained Keras model (.keras format) and the scaler object (.pkl using joblib).
+- Evaluation & Visualization: Generates and displays:
+- Confusion Matrix
+- ROC Curve and AUC Score
+- Training & Validation Accuracy/Loss History Plots
+- Prediction Interfaces:
+- Batch Prediction: Accepts CSV file uploads for prediction (via Notebook or script).
+- Manual Input: Interactive patient data input using ipywidgets within the Jupyter Notebook.
+- Modularity: Separate Python scripts (train.py, predict.py) for streamlined training and inference workflows.
 
 ---
 
