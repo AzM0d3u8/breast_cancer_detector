@@ -37,6 +37,26 @@ Batch Prediction: Accepts CSV file uploads for prediction (via Notebook or scrip
 Manual Input: Interactive patient data input using ipywidgets within the Jupyter Notebook.
 Modularity: Separate Python scripts (train.py, predict.py) for streamlined training and inference workflows.
 
+---
+
+## 📊 Model Evaluation
+
+| Metric          | Value    |
+|-----------------|----------|
+| Accuracy        | 96.49%   |
+| Precision       | ~96%     |
+| Recall          | ~96%     |
+| F1 Score        | ~96%     |
+| ROC AUC Score   | ~99%     |
+
+**Key Points:**
+- High **precision** ensures fewer false positives (important for cancer diagnosis).
+- High **recall** ensures fewer false negatives (catching almost all true cancer cases).
+- AUC close to **1.0** indicates the model discriminates extremely well between benign and malignant cases.
+
+---
+
+
 ## 📂 Project Structure
 
 ```text
