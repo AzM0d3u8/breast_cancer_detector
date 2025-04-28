@@ -19,6 +19,8 @@ The aim is to help automate preliminary diagnosis and assist healthcare professi
 
 ## 📂 Repository Structure
 
+breast_cancer_detector/ ├── models/ # Saved models and scalers │ ├── breast_cancer_detector_model.keras │ └── scaler.pkl │ ├── notebooks/ # Jupyter notebooks │ └── breast_cancer_detection.ipynb │ ├── scripts/ # Python scripts for training and prediction │ ├── train.py │ └── predict.py │ ├── assets/ # Images, banners, README assets │ └── banner_cyberpunk_ai_theme.jpg │ ├── requirements.txt # Python dependencies ├── README.md # Project documentation └── LICENSE # MIT License file
+
 ---
 
 ## 🧬 Dataset
