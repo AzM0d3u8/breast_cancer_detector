@@ -35,11 +35,21 @@ breast_cancer_detector/
 ├── scripts/                 # Python scripts for training and prediction
 │   ├── train.py
 │   └── predict.py
-├── assets/                  # Images, banners, plots, README assets
-│   ├── banner_cyberpunk_ai_theme.jpg
-│   └── # Add paths to saved plots like confusion_matrix.png, roc_curve.png, training_history.png
-├── data/                    # (Optional) Directory for raw/processed data if not loading directly
 ├── requirements.txt         # Python dependencies
 ├── README.md                # Project documentation
 └── LICENSE                  # MIT License file
+---
 
+⚙️ Features of This Project
+Deep Learning Model: Sequential Deep Neural Network built with Keras (TensorFlow backend). Features 5 layers with Dropout regularization to prevent overfitting.
+Training Callbacks: Implements EarlyStopping to halt training when validation performance degrades and ReduceLROnPlateau to adjust the learning rate dynamically.
+Preprocessing: Utilizes StandardScaler from Scikit-learn for feature scaling, saved for consistent application during inference.
+Model Persistence: Saves the trained Keras model (.keras format) and the scaler object (.pkl using joblib).
+Evaluation & Visualization: Generates and displays:
+Confusion Matrix
+ROC Curve and AUC Score
+Training & Validation Accuracy/Loss History Plots
+Prediction Interfaces:
+Batch Prediction: Accepts CSV file uploads for prediction (via Notebook or script).
+
+Modularity: Separate Python scripts (train.py, predict.py) for streamlined training and inference workflows.
