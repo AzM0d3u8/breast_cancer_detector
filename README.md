@@ -8,46 +8,38 @@
 
 ---
 
-## 📖 Overview
-
-This project focuses on **early and accurate detection of breast cancer** using a deep learning-based neural network.  
-It classifies tumors as either **Benign** or **Malignant** based on fine-grained features extracted from biopsy data.
-
-The aim is to help automate preliminary diagnosis and assist healthcare professionals.
+# 🚀 Breast Cancer Detection using Deep Neural Networks
 
 
----
 
 ## 🧬 Dataset
 
 - **Source**: [UCI Machine Learning Repository - Breast Cancer Wisconsin (Diagnostic)](https://archive.ics.uci.edu/ml/datasets/breast+cancer+wisconsin+(diagnostic))
-- **Features**: 30 numerical input features (e.g., radius, texture, smoothness).
-- **Target Classes**: 
+- **Features**: 30 numerical input features derived from digitized images of fine needle aspirates (FNAs) of breast masses (e.g., radius, texture, perimeter, area, smoothness, compactness, concavity, concave points, symmetry, fractal dimension - mean, standard error, and worst values for each).
+- **Target Classes**:
   - `0`: Malignant
   - `1`: Benign
-- **Total Samples**: 569 instances.
+- **Total Samples**: 569 instances (357 Benign, 212 Malignant).
 
 ---
 
-## ⚙️ Features of This Project
+## 📂 Project Structure
 
-- Deep Neural Network with 5 layers and **Dropout Regularization**.
-- **EarlyStopping** and **ReduceLROnPlateau** callbacks to prevent overfitting.
-- **Keras** model saving (`.keras`) and **scaler** serialization (`.pkl`).
-- **Confusion Matrix**, **ROC Curve**, and **Training History** visualization.
-- CSV Upload for batch predictions inside Colab.
-- Manual patient input using **ipywidgets**.
-- Highly modular scripts for training and inference.
+```text
+breast_cancer_detector/
+├── models/                  # Saved models and scalers
+│   ├── breast_cancer_detector_model.keras
+│   └── scaler.pkl
+├── notebooks/               # Jupyter notebooks
+│   └── breast_cancer_detection.ipynb
+├── scripts/                 # Python scripts for training and prediction
+│   ├── train.py
+│   └── predict.py
+├── assets/                  # Images, banners, plots, README assets
+│   ├── banner_cyberpunk_ai_theme.jpg
+│   └── # Add paths to saved plots like confusion_matrix.png, roc_curve.png, training_history.png
+├── data/                    # (Optional) Directory for raw/processed data if not loading directly
+├── requirements.txt         # Python dependencies
+├── README.md                # Project documentation
+└── LICENSE                  # MIT License file
 
----
-
-## 🚀 Getting Started
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/AzM0d3u8/breast_cancer_detector.git
-cd breast_cancer_detector
-
-
-.
