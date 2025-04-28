@@ -48,8 +48,6 @@ The aim is to help automate preliminary diagnosis and assist healthcare professi
 ```bash
 git clone https://github.com/AzM0d3u8/breast_cancer_detector.git
 cd breast_cancer_detector
-2. Install the dependencies
-bash
 
-pip install -r requirements.txt
-Make sure you are using Python 3.8+ and TensorFlow 2.10+.
+
+.
