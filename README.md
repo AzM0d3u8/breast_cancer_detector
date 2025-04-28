@@ -15,22 +15,7 @@ It classifies tumors as either **Benign** or **Malignant** based on fine-grained
 
 The aim is to help automate preliminary diagnosis and assist healthcare professionals.
 
----
 
-## 📂 Repository Structure
-
-breast_cancer_detector/
-├── models/                  # Saved models and scalers
-│   ├── breast_cancer_detector_model.keras
-│   └── scaler.pkl
-├── notebooks/               # Jupyter notebooks
-│   └── breast_cancer_detection.ipynb
-├── scripts/                 # Python scripts for training and prediction
-│   ├── train.py
-│   └── predict.py 
-├── requirements.txt         # Python dependencies
-├── README.md                # Project documentation
-└── LICENSE                  # MIT License file
 ---
 
 ## 🧬 Dataset
@@ -63,3 +48,8 @@ breast_cancer_detector/
 ```bash
 git clone https://github.com/AzM0d3u8/breast_cancer_detector.git
 cd breast_cancer_detector
+2. Install the dependencies
+bash
+
+pip install -r requirements.txt
+Make sure you are using Python 3.8+ and TensorFlow 2.10+.
