@@ -8,10 +8,6 @@
 
 ---
 
-# 🚀 Breast Cancer Detection using Deep Neural Networks
-
-
-
 ## 🧬 Dataset
 
 - **Source**: [UCI Machine Learning Repository - Breast Cancer Wisconsin (Diagnostic)](https://archive.ics.uci.edu/ml/datasets/breast+cancer+wisconsin+(diagnostic))
