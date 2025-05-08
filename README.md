@@ -1,4 +1,3 @@
-
 # 🧠 Breast Cancer Detection using Deep Neural Networks
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)
@@ -122,8 +121,64 @@ pip install tensorflow scikit-learn pandas matplotlib joblib ipywidgets
 
 This project is built with a vision to assist early-stage detection of breast cancer using AI, making diagnostics faster, reliable, and accessible.
 
-“Let this not just be a model, but a shield in someone’s fight against cancer.”
+"Let this not just be a model, but a shield in someone's fight against cancer."
 
 ## 📜 License 
 
 MIT License — free to use with attribution.
+
+# Breast Cancer Detection Web App
+
+This is a Streamlit web application that uses a deep neural network to predict whether a breast mass is benign or malignant based on various features.
+
+## Features
+
+- CSV file upload for batch predictions
+- Manual input for single predictions
+- Real-time predictions with confidence scores
+- Download predictions as CSV
+- User-friendly interface
+
+## Installation
+
+1. Clone this repository
+2. Install the required packages:
+```bash
+pip install -r requirements.txt
+```
+
+## Running the App
+
+1. Make sure you have the trained model files in the `models` directory:
+   - `breast_cancer_detector_model.keras`
+   - `scaler.pkl`
+
+2. Run the Streamlit app:
+```bash
+streamlit run app.py
+```
+
+3. The app will open in your default web browser at `http://localhost:8501`
+
+## Usage
+
+### CSV Upload
+1. Prepare a CSV file with 30 features in the correct order
+2. Upload the file using the file uploader
+3. View predictions and download results
+
+### Manual Input
+1. Enter values for each feature
+2. Click "Predict" to get the result
+3. View the prediction and confidence score
+
+## Model Features
+
+The model uses 30 features from the Wisconsin Breast Cancer dataset:
+- Mean values of various characteristics
+- Standard error of these characteristics
+- Worst values of these characteristics
+
+## Note
+
+This application is for educational purposes only and should not be used for actual medical diagnosis. Always consult with healthcare professionals for medical decisions.
